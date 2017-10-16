@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'atlasdev'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'The test / development version of the Atlas iOS client framework'
 
 # This description is used to generate tags and improve search results.
