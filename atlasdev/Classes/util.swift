@@ -29,7 +29,8 @@ let AtlasError = [
     AtlasErrorType.couldNotRetrieveConfig : "",
     AtlasErrorType.couldNotAccessDomain : "",
     AtlasErrorType.couldNotBuildItem : "",
-    AtlasErrorType.couldNotRetrieveScene : ""
+    AtlasErrorType.couldNotRetrieveScene : "",
+    AtlasErrorType.configEmtpy : "config data is empty - server error. The user will not see any menu items, but your application will continue to run."
 ]
 
 // server API calls
