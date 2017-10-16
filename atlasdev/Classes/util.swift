@@ -39,3 +39,21 @@ let AtlasRequests = [
 ]
 
 let AtlasDEBUG: Bool = true
+
+
+public func parseResponseToDict(_ input: Data) -> [String : NSDictionary]? {
+    do {
+        let output = try JSONSerialization.jsonObject(with: input, options: []) as? [String : NSDictionary]
+        return output
+    } catch let error {
+        print("ERROR: ", error)
+    }
+    // default return - may need to ensure that the block above completes before this is returned
+    return [:]
+}
+
+public func parseFileNameToPrefix(_ input: String) -> String{
+    let endOfSentence = input.index(before: (input.index(of: "."))!)
+    let output = String(input[...(endOfSentence)])
+    return output
+}

@@ -1,5 +1,7 @@
 PODS:
-  - atlasdev (0.1.0)
+  - Alamofire (4.5.1)
+  - atlasdev (0.1.1):
+    - Alamofire (~> 4.5)
   - Nimble (7.0.2)
   - Quick (1.2.0)
 
@@ -13,7 +15,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  atlasdev: 7b5da8ae244a9b99b3bf3e69887de9c3f661e4fb
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  atlasdev: 0efd32e6c050922f92dae1784d846236eddede51
   Nimble: bfe1f814edabba69ff145cb1283e04ed636a67f2
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
 
