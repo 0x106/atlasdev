@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (4.5.1)
-  - atlasdev (0.1.1):
+  - atlasdev (0.1.2):
     - Alamofire (~> 4.5)
   - Nimble (7.0.2)
   - Quick (1.2.0)
@@ -16,10 +16,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
-  atlasdev: 0efd32e6c050922f92dae1784d846236eddede51
+  atlasdev: 8e80aeb78c9d22dcf984f7d220d1e479e597766e
   Nimble: bfe1f814edabba69ff145cb1283e04ed636a67f2
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
 
-PODFILE CHECKSUM: 23e7eedb3932bdf96f0f5db02b01baed805fede8
+PODFILE CHECKSUM: bbd7d35bcba3fdef50bc73b18ed3dfad02163263
 
 COCOAPODS: 1.3.1

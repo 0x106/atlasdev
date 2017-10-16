@@ -220,6 +220,7 @@
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = X74VR9B6M2;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -556,6 +557,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A89D82AF857436F251254770 /* Pods-atlasdev_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = X74VR9B6M2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -577,6 +579,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 87B50E8E6D5E62514E8C20BE /* Pods-atlasdev_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = X74VR9B6M2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

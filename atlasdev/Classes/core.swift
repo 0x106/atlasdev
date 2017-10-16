@@ -7,7 +7,7 @@ public class Atlasdev {
 
     let uid: String
     var authStatus: AuthType
-    let domain: String
+    var domain: String
     var config: [String : NSDictionary]
 
     var menu = Menu() // initialise as a default (empty menu)
@@ -38,6 +38,8 @@ public class Atlasdev {
     /// Performs a series of step to allow the user to access Atlas content.
     private func setup() {
         print("setup")
+        
+        self.domain = "https://1198c843.ngrok.io/"
         
         // authenticate user
         self.authStatus = authenticate()

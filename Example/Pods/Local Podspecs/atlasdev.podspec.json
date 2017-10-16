@@ -1,6 +1,6 @@
 {
   "name": "atlasdev",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "summary": "The test / development version of the Atlas iOS client framework",
   "description": "The test / development version of the Atlas iOS client framework. This won't be released publicly but is being developed to\nensure that everything works nicely. Hopefully everything can be copied directly from here.",
   "homepage": "https://github.com/Jordan-Campbell/atlasdev",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Jordan-Campbell/atlasdev.git",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "8.0"
