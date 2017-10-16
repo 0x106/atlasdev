@@ -29,10 +29,10 @@
 
 /* Begin PBXFileReference section */
 		08C13059059030E2D0833B43 /* Pods-atlasdev_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atlasdev_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-atlasdev_Example/Pods-atlasdev_Example.release.xcconfig"; sourceTree = "<group>"; };
-		3414834B775DDD3FF2E599C4 /* atlasdev.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = atlasdev.podspec; path = ../atlasdev.podspec; sourceTree = "<group>"; };
+		3414834B775DDD3FF2E599C4 /* atlasdev.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = atlasdev.podspec; path = ../atlasdev.podspec; sourceTree = "<group>"; };
 		36B307ED661AC2A8C54D7E7C /* Pods_atlasdev_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_atlasdev_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		57D471B0FC04B250A0C49190 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		5B8E72A5BDB42F779BE6C914 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		57D471B0FC04B250A0C49190 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5B8E72A5BDB42F779BE6C914 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* atlasdev_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = atlasdev_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -215,6 +215,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = X74VR9B6M2;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -522,6 +523,7 @@
 			baseConfigurationReference = 8FA6D3992C68C70B3AF0D5A3 /* Pods-atlasdev_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X74VR9B6M2;
 				INFOPLIST_FILE = atlasdev/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -537,6 +539,7 @@
 			baseConfigurationReference = 08C13059059030E2D0833B43 /* Pods-atlasdev_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X74VR9B6M2;
 				INFOPLIST_FILE = atlasdev/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;

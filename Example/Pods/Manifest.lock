@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  atlasdev: ce40bf9ca954cc0b1ab028b2fc0710438bdb0a28
+  atlasdev: 7b5da8ae244a9b99b3bf3e69887de9c3f661e4fb
   Nimble: bfe1f814edabba69ff145cb1283e04ed636a67f2
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
 

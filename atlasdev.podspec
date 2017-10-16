@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'atlasdev'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of atlasdev.'
+  s.summary          = 'The test / development version of the Atlas iOS client framework'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,8 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+The test / development version of the Atlas iOS client framework. This won't be released publicly but is being developed to
+ensure that everything works nicely. Hopefully everything can be copied directly from here.
                        DESC
 
   s.homepage         = 'https://github.com/Jordan-Campbell/atlasdev'
@@ -31,7 +32,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'atlasdev/Classes/**/*'
-  
+
   # s.resource_bundles = {
   #   'atlasdev' => ['atlasdev/Assets/*.png']
   # }
