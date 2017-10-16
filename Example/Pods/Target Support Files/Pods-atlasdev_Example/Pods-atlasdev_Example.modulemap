@@ -1,0 +1,6 @@
+framework module Pods_atlasdev_Example {
+  umbrella header "Pods-atlasdev_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

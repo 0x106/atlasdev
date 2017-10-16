@@ -1,0 +1,22 @@
+PODS:
+  - atlasdev (0.1.0)
+  - Nimble (7.0.2)
+  - Quick (1.2.0)
+
+DEPENDENCIES:
+  - atlasdev (from `../`)
+  - Nimble (~> 7.0.2)
+  - Quick (~> 1.2.0)
+
+EXTERNAL SOURCES:
+  atlasdev:
+    :path: ../
+
+SPEC CHECKSUMS:
+  atlasdev: ce40bf9ca954cc0b1ab028b2fc0710438bdb0a28
+  Nimble: bfe1f814edabba69ff145cb1283e04ed636a67f2
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+
+PODFILE CHECKSUM: 23e7eedb3932bdf96f0f5db02b01baed805fede8
+
+COCOAPODS: 1.3.1

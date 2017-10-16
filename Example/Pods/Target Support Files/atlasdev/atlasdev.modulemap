@@ -1,0 +1,6 @@
+framework module atlasdev {
+  umbrella header "atlasdev-umbrella.h"
+
+  export *
+  module * { export * }
+}
