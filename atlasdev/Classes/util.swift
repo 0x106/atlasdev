@@ -52,7 +52,7 @@ public func parseResponseToDict(_ input: Data) -> [String : NSDictionary]? {
     return [:]
 }
 
-public func parseFileNameToPrefix(_ input: String) -> String{
+public func parseFileNameToPrefix(_ input: String) -> String {
     let endOfSentence = input.index(before: (input.index(of: "."))!)
     let output = String(input[...(endOfSentence)])
     return output

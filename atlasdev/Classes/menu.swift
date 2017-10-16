@@ -45,15 +45,14 @@ public class Menu {
         
         return retval
     }
-    
-    public func getItems() {}
-    public func getLabel() {}
-    
+        
     public func handleSelection(withKey key: String) -> Bool {
         return (menu[key]?.handleItemSelected())! // returns true if safe to download file
     }
 }
 
+
+// should this be a subclass of Menu?
 public class MenuItem {
     
     /// the public text representation of the scene
@@ -130,7 +129,7 @@ public class MenuItem {
         self.node = textNodeParent
     }
     
-    func applyTransform(_ x: Float, _ y: Float, _ z: Float = 0) {
+    public func applyTransform(_ x: Float, _ y: Float, _ z: Float = 0) {
         let matrix = translate(x, y, z)
         self.node.transform = matrix
         print(self.node.position)
@@ -140,7 +139,7 @@ public class MenuItem {
         return SCNMatrix4MakeTranslation(x, y, z)//x * self.size, y * self.size, z * self.size)
     }
     
-    func handleItemSelected() -> Bool {
+    public func handleItemSelected() -> Bool {
         
         var retval: Bool = false
         
