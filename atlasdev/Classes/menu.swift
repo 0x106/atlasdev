@@ -69,6 +69,7 @@ public class MenuItem {
     
     /**
          Creates a menu item
+         Code from https://github.com/hanleyweng/CoreML-in-ARKit/blob/master/CoreML%20in%20ARKit/ViewController.swift
          - Parameters:
              - key: unique ID
              - label: the name the user sees
