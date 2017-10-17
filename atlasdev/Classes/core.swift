@@ -94,7 +94,7 @@ public class Atlasdev {
         self.config = config!
 
         if self.config == [:] {
-            print()
+            print(AtlasError[AtlasErrorType.configEmtpy])
         } else {
             self.menu = Menu(self.config)
 
@@ -133,6 +133,13 @@ public class Atlasdev {
         manager.request(requestURL, method: .get, parameters: parameters).responseJSON { response in
             if let data = response.data {
                 output = parseResponseToDict(data)
+                
+                if output! == [:] {
+                    print(AtlasError[AtlasErrorType.couldNotRetrieveScene])
+                    print( manager.session.configuration.description )
+                    return // return from this attempt, but the user should still be able to try again (this is usually a timeout problem
+                }
+                
                 applicationID = (output!["appMeta"]?["key"] as! String)
             }
 
@@ -170,7 +177,7 @@ public class Atlasdev {
              - touches: objects representing each of the touches on the screen.
              - event: the type of the touch
      */
-    private func hitTestRequest( _ touches: Set<UITouch>, with event: UIEvent? ) {
+    public func hitTestRequest( _ touches: Set<UITouch>, with event: UIEvent? ) {
         print("hitTestRequest")
         if let touchLocation = touches.first?.location(in: self.view) {
             if let hit = self.view.hitTest(touchLocation, options: nil).first {

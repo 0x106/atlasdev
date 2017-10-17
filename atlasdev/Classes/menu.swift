@@ -132,7 +132,6 @@ public class MenuItem {
     public func applyTransform(_ x: Float, _ y: Float, _ z: Float = 0) {
         let matrix = translate(x, y, z)
         self.node.transform = matrix
-        print(self.node.position)
     }
     
     private func translate(_ x: Float, _ y: Float, _ z: Float = 0) -> SCNMatrix4 {
@@ -144,6 +143,8 @@ public class MenuItem {
         var retval: Bool = false
         
         // make checks
+        
+        retval = true
         
         if retval {
             let textNode = self.node.childNode(withName: "text", recursively: true)

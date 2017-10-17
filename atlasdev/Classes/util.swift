@@ -20,6 +20,7 @@ enum AtlasErrorType {
     case couldNotAccessDomain
     case couldNotBuildItem
     case couldNotRetrieveScene
+    case configEmtpy
 }
 
 
@@ -29,7 +30,7 @@ let AtlasError = [
     AtlasErrorType.couldNotRetrieveConfig : "",
     AtlasErrorType.couldNotAccessDomain : "",
     AtlasErrorType.couldNotBuildItem : "",
-    AtlasErrorType.couldNotRetrieveScene : "",
+    AtlasErrorType.couldNotRetrieveScene : "Error downloading the selected scene file: returning from execution. User can try again.",
     AtlasErrorType.configEmtpy : "config data is empty - server error. The user will not see any menu items, but your application will continue to run."
 ]
 
@@ -41,6 +42,16 @@ let AtlasRequests = [
 
 let AtlasDEBUG: Bool = true
 
+//public func isError(with input: Any) -> Bool {
+//
+//    var retval = false
+//
+//    for error in AtlasError {
+//        if input
+//    }
+//
+//    return retval
+//}
 
 public func parseResponseToDict(_ input: Data) -> [String : NSDictionary]? {
     do {
