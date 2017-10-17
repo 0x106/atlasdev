@@ -133,13 +133,13 @@ public class Atlasdev {
         manager.request(requestURL, method: .get, parameters: parameters).responseJSON { response in
             if let data = response.data {
                 output = parseResponseToDict(data)
-                
+
                 if output! == [:] {
                     print(AtlasError[AtlasErrorType.couldNotRetrieveScene] ?? "error")
                     print( manager.session.configuration.description )
                     return // return from this attempt, but the user should still be able to try again (this is usually a timeout problem
                 }
-                
+
                 applicationID = (output!["appMeta"]?["key"] as! String)
             }
 
