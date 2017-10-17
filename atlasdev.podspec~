@@ -40,4 +40,5 @@ ensure that everything works nicely. Hopefully everything can be copied directly
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'Alamofire', '~> 4.5'
+
 end
