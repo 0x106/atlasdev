@@ -59,7 +59,7 @@ public class Atlasdev {
      */
     private func authenticate() -> AuthType {
         print("authenticate")
-        var retval = AuthType.loggedIn
+        let retval = AuthType.loggedIn
         return retval
     }
 
@@ -72,7 +72,7 @@ public class Atlasdev {
 
         // send a get request to <self.domain>/core/database/userLogIn
         let parameters = [
-            "uid" : self.uid as! String
+            "uid" : self.uid
         ]
 
         let requestURL = self.domain + AtlasRequests[AtlasRequestsType.userLogInConfigRequest]!
@@ -94,7 +94,7 @@ public class Atlasdev {
         self.config = config!
 
         if self.config == [:] {
-            print(AtlasError[AtlasErrorType.configEmtpy])
+            print(AtlasError[AtlasErrorType.configEmtpy] ?? "error")
         } else {
             self.menu = Menu(self.config)
 
@@ -135,7 +135,7 @@ public class Atlasdev {
                 output = parseResponseToDict(data)
                 
                 if output! == [:] {
-                    print(AtlasError[AtlasErrorType.couldNotRetrieveScene])
+                    print(AtlasError[AtlasErrorType.couldNotRetrieveScene] ?? "error")
                     print( manager.session.configuration.description )
                     return // return from this attempt, but the user should still be able to try again (this is usually a timeout problem
                 }
